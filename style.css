@@ -1,0 +1,89 @@
+.ship {
+    width: 500px;
+    height: 500px;
+    margin: 8% auto 0 auto;
+    position: relative;
+}
+
+.up {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.mast {
+    width: 1px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    left: 100%;
+}
+
+.mast::before {
+    content:'';
+    width: 1px;
+    height: 157px;
+    background-color: black;
+    position: absolute;
+    top: 46px;
+    left: -26px;
+    transform: rotate(21grad)
+}
+
+.mast::after {
+    content:'';
+    width: 1px;
+    height: 212px;
+    background-color: black;
+    position: absolute;
+    top: -7px;
+    left: 34px;
+    transform: rotate(-21grad)
+}
+
+.deck{
+    background-color: black;
+    width: 200px;
+    height: 1px;
+    position: absolute;
+    top: 55%;
+    left: 43%;
+}
+
+.deck::before {
+    display: flex;
+    content:'';
+    background-color: black;
+    width: 75px;
+    height: 1px;
+    position: absolute;
+    top: 27px;
+    left: 135px;
+    transform: rotate(-45deg)
+}
+
+.deck::after {
+    display: flex;
+    content:'';
+    background-color: black;
+    width: 75px;
+    height: 1px;
+    position: absolute;
+    top: 27px;
+    left: -10px;
+    transform: rotate(45deg)
+}
+
+.down-floor {
+    display: flex;
+    content:'';
+    background-color: black;
+    width: 90px;
+    height: 1px;
+    position: absolute;
+    top: 329px;
+    left: 270px;
+}
